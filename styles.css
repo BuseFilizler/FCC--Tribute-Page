@@ -1,0 +1,352 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Flexo-Medium", arial, sans-serif;
+  font-size: 16px;
+}
+main {
+  margin:0 auto;
+}
+body {
+  background-color: white;
+  background: transparent url("../img/chrome/content_bg.png") left top;
+  color: #898989;
+}
+
+ul.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: .1em;
+  padding-bottom: .1em;
+  border: 1px solid #4dad5b;
+  -webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 14px 0px #4dad5b;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+li.navbarli {
+  float: left;
+}
+
+li.navbarli a {
+  display: block;
+  color: #898989;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li.navbarli a:hover {
+  background-color: #898989;
+  color: #fff;
+}
+.active {
+  background-color: #4dad5b;
+  color: #fff;
+  border-radius: 5px;
+}
+h1#title,
+span.first {
+  color: #404060;
+  font-weight: 600;
+  text-align: center;
+}
+
+div#main1 {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 2300px;
+  min-height: 200px;
+  flex-shrink: 0;
+}
+
+img#image {
+  max-width: 350px;
+  height: auto;
+  margin-left: auto;  
+  margin-right: auto;  
+  
+}
+
+figcaption {
+  margin: 20px 20px;
+  max-width: 700px;
+  min-width: 300px;
+}
+
+hr {
+  border: 1px solid #4dad5b;
+}
+
+div#main2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 50px;
+  align-content: stretch;
+  max-width: 2300px;
+  min-height: 200px;
+  flex-shrink: 0;
+
+}
+
+table.customTable {
+  background-color: #30a7d7;
+  border-radius: 5%;
+  padding: 5px;
+  width: 360px;
+  height: 100px;
+}
+
+.white {
+  font-size: 16px;
+  color: #fff;
+}
+
+.black {
+  font-size: 21px;
+  color: black;
+  padding-bottom: 5px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Type . ."
+    "bug Grass ."
+    "Weakness . ."
+    "Fire Flying Ice"
+    "Posion Rock Bug";
+}
+
+.Type {
+  grid-area: Type;
+  padding-bottom: 10px;
+  font-size: 21px;
+}
+
+.bug {
+  grid-area: bug;
+  width: 100px;
+  height: 20px;
+  padding-top: 2px;
+  background-color: #4dad5b;
+  border: 3px solid #4dad5b;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+.Grass {
+  grid-area: Grass;
+  width: 100px;
+  height: 20px;
+  padding-top: 2px;
+  background-color: #9bcc50;
+  border: 3px solid #9bcc50;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+.Weakness {
+  grid-area: Weakness;
+  padding-bottom: 10px;
+  font-size: 21px;
+}
+
+.Fire {
+  grid-area: Fire;
+  width: 100px;
+  height: 20px;
+  padding-top: 2px;
+  background-color: #fd7d24;
+  border: 3px solid #fd7d24;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+.Flying {
+  grid-area: Flying;
+  width: 100px;
+  height: 20px;
+  padding-top: 2px;
+  background-color: #30a7d7;
+  border: 3px solid #30a7d7;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+
+.Ice {
+  grid-area: Ice;
+  width: 100px;
+  height: 20px;
+  padding-top: 2px;
+  background-color: #bdb9b8;
+  border: 3px solid #bdb9b8;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+.Posion {
+  grid-area: Posion;
+  width: 100px;
+  height: 20px;
+  padding-top: 2px;
+  background-color: #b97fc9;
+  border: 3px solid #b97fc9;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+.Rock {
+  grid-area: Rock;
+  width: 100px;
+  height: 20px;
+  padding-top: 2px;
+  background-color: #a38c21;
+  border: 3px solid #a38c21;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+.Bug {
+  grid-area: Bug;
+  width: 100px;
+  height: 20px;
+  padding-top: 2px;
+  background-color: #4dad5b;
+  border: 3px solid #4dad5b;
+  text-align: center;
+  color: #fff;
+  border-radius: 15px;
+  margin-right: 15px;
+}
+
+div#main3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: stretch;
+  max-width: 2300px;
+  min-height: 200px;
+}
+
+.container2 {
+  display: grid;
+  background-color: #8989894d;
+  grid-auto-flow: row dense;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1.2fr 0.5fr 1.2fr;
+  grid-template-rows: 0.4fr 1.2fr 1.2fr 1.2fr;
+  gap: 1px 67px;
+  grid-template-areas:
+    "evo . ."
+    "paras arrow parasect"
+    "parasname . parasectname"
+    "buggrass . buggrass2";
+  height: 375px;
+  justify-items: center;
+  align-items: center;
+}
+
+.evo {
+  grid-area: evo;
+  font-size: 21px;
+  padding-bottom: 20px;
+  padding-top: 14px;
+}
+
+.paras {
+  grid-area: paras;
+  align-content: center;
+  border: 5px solid #898989;
+  border-radius: 50%;
+}
+
+.parasect {
+  grid-area: parasect;
+  align-content: center;
+  border: 5px solid #898989;
+  border-radius: 50%;
+}
+
+.arrow {
+  grid-area: arrow;
+  text-align: center;
+  font-size: 100px;
+  
+}
+
+.parasname {
+  grid-area: parasname;
+  text-align: center;
+  font-size: 21px;
+}
+
+.parasectname {
+  grid-area: parasectname;
+  text-align: center;
+  font-size: 21px;
+}
+
+.buggrass {
+  grid-area: buggrass;
+}
+
+.buggrass2 {
+  grid-area: buggrass2;
+}
+
+button#explore {
+  float:right;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #fd7d24;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 15px;
+  padding: 10px;
+  border: 0ch;
+}
+
+button#explore:hover {
+  background-color: #fff;
+  color:#fd7d24;
+  border: 2px solid #fd7d24;
+}
